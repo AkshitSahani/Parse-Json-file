@@ -1,0 +1,24 @@
+<h1> Welcome to SeamlessMD</h1>
+
+<h2> Patient Information </h2>
+<div class="name"> <strong> Name of patient: </strong> <%= @patient["name"][0]["given"][0] %> <%= @patient["name"][0]["family"][0] %>
+</div>
+
+<div class="organization_name"> <strong>Name of organization: </strong> <%= @patient["managingOrganization"]["display"] %>
+</div>
+
+<div class="gender"> <strong> Gender: </strong><%= @patient["gender"] %>
+</div>
+
+<div class="conditions_number"> <strong> Number of conditions: </strong><%= @patient["conditions"].count %>
+</div>
+
+<div class="conditions"> <strong> List of all conditions: </strong>
+  <ul>
+    <% @patient["conditions"].each do |condition| %>
+    <li> <%= condition %> </li>
+    <% end %>
+  </ul>
+</div>
+
+<h4> Thank you for choosing SeamlessMD! </h4>
