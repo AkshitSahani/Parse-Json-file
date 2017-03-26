@@ -1,3 +1,31 @@
 // Place all the styles related to the Patients controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1{
+  padding-left: 7%;
+}
+
+.patient-info{
+  float: right;
+}
+
+.home-page{
+  float: right;
+}
+
+h4{
+  padding-top: 30%;
+}
+
+body{
+  background-color: azure;
+  text-align: center;
+}
+
+ul{
+  padding-left: 47%;
+  text-align: left;
+}
+li{
+  padding-right: 75%;
+}
